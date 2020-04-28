@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/gatsby-react-bootstrap-starter",
   siteMetadata: {
     title: `Gatsby React Bootstrap Starter`,
     description: `A starter that includes react-bootstrap and react-icons, along with SASS compilation.`,
@@ -28,8 +27,12 @@ module.exports = {
         display: `minimal-ui`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+    resolve: `gatsby-plugin-typography`,
+    options: {
+      pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
