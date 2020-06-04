@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout pageInfo={{ pageName: "index" }}>
+  <Layout pageInfo={{ pageName: "/" }}>
     <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
     <Container className="text-center">
       <Row>
