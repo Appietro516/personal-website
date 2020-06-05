@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
 
 const NavLink = ({ page, text }) => {
-
     return (
     <>
         <div>

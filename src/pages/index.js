@@ -3,6 +3,8 @@ import { Row, Col, Container, ListGroup } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Typewriter from 'typewriter-effect';
+
 
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "/" }}>
@@ -10,6 +12,18 @@ const IndexPage = () => (
     <Container className="text-center">
       <Row>
         <Col>
+            <h1>
+            <Typewriter
+                options={{
+                    cursor: '',
+                    delay: 60,
+                }}
+              onInit={(typewriter) => {
+                typewriter.typeString("Hi! I\'m Anthony Pietrofeso!").start();
+              }}
+            />
+            </h1>
+
           <p>
             This is a Gatsby Starter that I frequently use to get jump started
             on quick website builds. It includes the following packages:

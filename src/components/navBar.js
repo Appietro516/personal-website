@@ -20,13 +20,16 @@ const CustomNavbar = ({ pageInfo }) => {
             <Navlink page = "Projects"/>
             <Navlink page = "Skills"/>
             <Navlink page = "Contact"/>
+            <div>
+                <a className="nav-link" href ="https://drive.google.com/file/d/1mU8UP-n07u4xBK9B1m1il1XdpsiVjmUJ/view?usp=sharing" target="_blank" >Resume</a>
+            </div>
           </Nav>
-          <div>
-              <IconContext.Provider value={{ color: "white", className: "nav-fa-icon", size:"1.2em"}}>
+          <div id="nav-external-buttons" >
+              <IconContext.Provider value={{className: "nav-fa-icon", size:"1.2em"}}>
                   <a href="https://www.linkedin.com/in/anthony-pietrofeso/" title="LinkedIn">
                     <FaLinkedin />
                   </a>
-                  <a href="https://github.com/Appietro516"  title="Github">
+                  <a href="https://github.com/Appietro516" title="Github">
                     <FaGithub />
                   </a>
                   <a href="https://stackoverflow.com/users/13677454/appietro516?tab=profile" title="StackOverflow">

@@ -14,14 +14,14 @@
 
 .navbar-collapse a {
   display: inline-block;
-  background: linear-gradient(to right, white, white 50%, rgba(255, 255, 255, 0.5) 50%);
+  background: linear-gradient(to right, #6F7175 50%, white, white);
   background-clip: text;
   font-weight: 00;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
+  background-size: 300% 100%;
   background-position: 100%;
-  transition: background-position 350ms ease;
+  transition: background-position 400ms ease;
   text-decoration: none; // text decorations are clipped in WebKit browsers
   // margin-bottom: 1em;
   &:hover {
@@ -29,16 +29,27 @@
   }
 }
 
+#nav-external-buttons{
+    a{
+        color: white;
+        &:hover{
+            color: #6F7175;
+        }
+    }
+
+}
+
 .navbar-toggler{
-      //width: %;
       margin: auto;
 }
 
-.nav-link.active{
-    -webkit-text-fill-color: white;
+.navbar-toggler-icon{
+    color:white;
 }
-
-.nav-link:hover{
+.nav-link.active{
+    &, .nav-fa-icon{
+        -webkit-text-fill-color: white;
+    }
 }
 
 .nav-fa-icon{
