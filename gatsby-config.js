@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby React Bootstrap Starter`,
-    description: `A starter that includes react-bootstrap and react-icons, along with SASS compilation.`,
-    author: `Billy Jacoby`,
+    title: `Anthony Pietrofeso's Website`,
+    description: `A collection of works by Anthony Pietrofeso`,
+    author: ` Anthony Pietrofeso`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-react-bootstrap`,
-        short_name: `react-bootstrap`,
+        name: `Anthony Pietrofeso's Website`,
+        short_name: `Anthony's site`,
         start_url: `/`,
         background_color: `#20232a`,
         theme_color: `#20232a`,
