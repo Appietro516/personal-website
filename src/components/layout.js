@@ -8,8 +8,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-import Navbar from "./navbar"
-import { rhythm } from "../utils/typography"
+import Navbar from "./navBar.js"
 
 
 const Layout = ({ children, pageInfo }) => (

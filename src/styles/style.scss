@@ -3,3 +3,14 @@
 
 @import "layout";
 @import "navbar";
+@import "hero";
+@import "contact";
+
+#index-content{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+html{
+    overflow-y: auto;
+}
