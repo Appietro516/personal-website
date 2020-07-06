@@ -1,7 +1,15 @@
 div.main {
   min-height: 100vh;
   padding-bottom: 60px;
-  background-color: #f6f8fa;
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+}
+
+.aligner-center{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: calc(100vh - 3 * #{$navbar-height});
 }
 
 div.full-height {
@@ -14,6 +22,7 @@ a.link-no-style {
   }
 }
 
+
 .footer-col {
   display: flex;
   flex-direction: column;
@@ -23,7 +32,7 @@ a.link-no-style {
     display: flex;
     position: relative;
     bottom: 0;
-    margin-top: -60px;
+    margin-top: -$navbar-height;
     height: 60px;
     clear: both;
     background-color: $color-primary;

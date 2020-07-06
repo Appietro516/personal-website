@@ -5,7 +5,7 @@ import Navlink from "../components/navlink"
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap"
 
 import { IconContext } from "react-icons";
-import { FaLinkedin, FaGithub, FaStackOverflow } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaStackOverflow, FaTrello } from 'react-icons/fa';
 
 
 const CustomNavbar = ({ pageInfo }) => {
@@ -25,7 +25,7 @@ const CustomNavbar = ({ pageInfo }) => {
             </div>
           </Nav>
           <div id="nav-external-buttons" >
-              <IconContext.Provider value={{className: "nav-fa-icon", size:"1.2em"}}>
+              <IconContext.Provider value={{className: "nav-fa-icon ", size:"1.5em"}}>
                   <a href="https://www.linkedin.com/in/anthony-pietrofeso/" title="LinkedIn">
                     <FaLinkedin />
                   </a>
@@ -34,6 +34,9 @@ const CustomNavbar = ({ pageInfo }) => {
                   </a>
                   <a href="https://stackoverflow.com/users/13677454/appietro516?tab=profile" title="StackOverflow">
                     <FaStackOverflow />
+                  </a>
+                  <a href="https://trello.com/appietro516" title="Trello">
+                    <FaTrello />
                   </a>
               </IconContext.Provider>
           </div>

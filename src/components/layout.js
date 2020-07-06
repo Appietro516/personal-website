@@ -28,7 +28,7 @@ const Layout = ({ children, pageInfo }) => (
           <Navbar pageInfo={pageInfo} />
           <Row noGutters>
             <Col>
-              <Container className="mt-4">
+              <Container>
                 <main>{children}</main>
               </Container>
             </Col>
