@@ -19,7 +19,7 @@ const GetTypeWriter = (text) => (
 )
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "/" }}>
-    <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
+    <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`, `Anthony`, `Pietrofeso`]} />
     <Container className="text-center aligner-center">
         <Hero title={ GetTypeWriter("Hi! I\'m Anthony Pietrofeso!") } text="Welcome to my personal website. I really enjoy all kinds of programming and data analysis work! Feel free to browse my latest projects, check out my resume, or contact me if you have any questions, comments, feedback, or business inquiries."/>
     </Container>

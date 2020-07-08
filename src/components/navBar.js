@@ -18,7 +18,7 @@ const CustomNavbar = ({ pageInfo }) => {
           <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
             <Navlink page = "/" text = "Home"/>
             <Navlink page = "Projects"/>
-            <Navlink page = "Skills"/>
+            {/* <Navlink page = "Skills"*/}
             <Navlink page = "Contact"/>
             <div>
                 <a className="nav-link" href ="https://drive.google.com/file/d/1mU8UP-n07u4xBK9B1m1il1XdpsiVjmUJ/view?usp=sharing" target="_blank" >Resume</a>

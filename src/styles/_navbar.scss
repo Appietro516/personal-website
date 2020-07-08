@@ -6,8 +6,10 @@
   z-index: 100;
   padding: 0 1em 0 1em;
   text-align: center;
-  height: 60px;
+  min-height: $navbar-height;
 }
+
+
 
 #main-title {
     padding-left:20px;
@@ -41,12 +43,18 @@
 }
 
 .navbar-toggler{
-      margin: auto;
+    //height: max-conent;
+    margin: auto;
+    border: 0;
+    &:focus{
+        outline: 0;
+    }
 }
 
 .navbar-toggler-icon{
-    color:white;
+    color: white;
 }
+
 .nav-link.active{
     &, .nav-fa-icon{
         -webkit-text-fill-color: white;
