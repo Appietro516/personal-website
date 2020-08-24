@@ -1,0 +1,23 @@
+[
+    {
+    "name": "This Website",
+    "description": "A personal website for displaying my portfolio, contact information, and work experiences.",
+    "projectUrl": "https://apietrofeso.net",
+    "srcUrl": "https://github.com/Appietro516/personal-website",
+    "image": "./images/projects/thiswebsite.png",
+    "technologies": ["Gatsby", "React", "Bootstrap", "GraphQL"],
+    "startDate": "Apr. 2020",
+    "endDate": "Ongoing"
+    },
+    {
+    "name": "Stock Bounce Back Calculator",
+    "description": "Group project designed to allow a user to display and track stock portfolio data similar to apps like Robinhood.",
+    "projectUrl": null,
+    "srcUrl": "https://github.com/aznaznorange/337FinalBounceBackCalculator",
+    "image": "./images/projects/bounce-back.png",
+    "technologies": ["Node", "Express", "Alpha Vantage API"],
+    "startDate": "Nov. 2018",
+    "endDate": "Dec. 2018"
+    }
+
+]

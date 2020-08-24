@@ -5,6 +5,21 @@ module.exports = {
     author: ` Anthony Pietrofeso`,
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        commonmark: true,
+        footnotes: true,
+        pedantic: true,
+        gfm: true,
+        plugins: [
+          {resolve: `gatsby-remark-images`}
+        ],
+      },
+    },
+    `gatsby-transformer-json`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -14,8 +29,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -32,6 +45,13 @@ module.exports = {
     resolve: `gatsby-plugin-typography`,
     options: {
       pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+    resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'ProjectsDataJson',
+        path: `${__dirname}/src/ProjectsData.json`,
       },
     },
     `gatsby-plugin-offline`,

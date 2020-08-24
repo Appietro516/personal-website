@@ -1,16 +1,56 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql} from 'gatsby';
 
 import Layout from "../components/layout"
+import ProjectCard from "../components/projectCard"
 import SEO from "../components/seo"
+import '../styles/_projects.scss';
 
-const SecondPage = () => (
+const getProjectFilesQuery = graphql`
+  {
+    allProjectsDataJson {
+      edges {
+        node {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 400, maxHeight: 225, quality: 100)  {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          name
+          description
+          projectUrl
+          srcUrl
+          technologies
+          startDate
+          endDate
+        }
+      }
+    }
+}`;
+
+const Projects = () => (
   <Layout pageInfo={{ pageName: "projects" }}>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <SEO title="Projects" />
+        <div className="d-flex justify-content-center flex-wrap mb-5 mr-auto ml-auto">
+            <StaticQuery query={getProjectFilesQuery} render={renderProjectCards} />
+        </div>
   </Layout>
 )
 
-export default SecondPage
+const renderProjectCards = ({ allProjectsDataJson }) => {
+    const projectCards = [];
+    allProjectsDataJson.edges.forEach(projectData => {
+        let project = projectData.node;
+        projectCards.push(
+            <ProjectCard key={project.name} project = {project}/>
+        );
+    });
+
+    return projectCards;
+};
+
+
+
+export default Projects

@@ -58,9 +58,14 @@
 .nav-link.active{
     &, .nav-fa-icon{
         -webkit-text-fill-color: white;
+	font-weight:bold;
     }
 }
 
 .nav-fa-icon{
      margin: 0 .75em 0 .75em;
+}
+
+.nav-link{
+     font-size: 1.5em;
 }

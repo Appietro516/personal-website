@@ -25,7 +25,7 @@ const CustomNavbar = ({ pageInfo }) => {
             </div>
           </Nav>
           <div id="nav-external-buttons" >
-              <IconContext.Provider value={{className: "nav-fa-icon ", size:"1.5em"}}>
+              <IconContext.Provider value={{className: "nav-fa-icon ", size:"2em"}}>
                   <a href="https://www.linkedin.com/in/anthony-pietrofeso/" title="LinkedIn">
                     <FaLinkedin />
                   </a>

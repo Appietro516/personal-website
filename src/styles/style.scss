@@ -1,6 +1,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "variables";
 
+@import "projects";
 @import "layout";
 @import "navbar";
 @import "hero";
@@ -13,4 +14,8 @@
 
 html{
     overflow-y: auto;
+}
+
+.w-30{
+    width: 30%;
 }
