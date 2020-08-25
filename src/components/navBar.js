@@ -21,7 +21,7 @@ const CustomNavbar = ({ pageInfo }) => {
             {/* <Navlink page = "Skills"*/}
             <Navlink page = "Contact"/>
             <div>
-                <a className="nav-link" href ="https://drive.google.com/file/d/1mU8UP-n07u4xBK9B1m1il1XdpsiVjmUJ/view?usp=sharing" target="_blank" >Resume</a>
+                <a className="nav-link" href ="https://drive.google.com/file/d/1mU8UP-n07u4xBK9B1m1il1XdpsiVjmUJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
           </Nav>
           <div id="nav-external-buttons" >
