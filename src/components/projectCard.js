@@ -26,12 +26,12 @@ const ProjectCard = ({ project }) => {
                 </div>
             </div>
             <div className ="card-body ml-auto mr-auto p-0 text-center relative">
-                <div className ="ml-auto mr-auto mb-2" style={{height:225, width:400}}>
+                <div className ="ml-auto mr-auto" style={{"border": "1px solid", "border-width": "1px 0 1px 0", height:226, width:400}}>
                     <Img objectFit="contain" fluid={project.image.childImageSharp.fluid} />
                 </div>
-                <div className="pb-2">
+                <p className="m-auto p-3 text-left" style = {{"font-size":".9rem"}}>
                     {project.description}
-                </div>
+                </p>
             </div>
         </div>
     </>

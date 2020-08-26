@@ -3,6 +3,7 @@ module.exports = {
     title: `Anthony Pietrofeso's Website`,
     description: `A collection of works by Anthony Pietrofeso`,
     author: ` Anthony Pietrofeso`,
+    siteUrl: `https://apietrofeso.net/`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
