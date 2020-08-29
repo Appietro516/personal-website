@@ -7,6 +7,7 @@ import ProjectCard from "../components/projectCard"
 import SEO from "../components/seo"
 import '../styles/_projects.scss';
 
+
 const getProjectFilesQuery = graphql`
   {
     allProjectsDataJson {
@@ -36,16 +37,12 @@ const Projects = () => {
 
     const renderProjectCards = ({ allProjectsDataJson }) => {
         const projectCards = [];
-        console.log(searchTerm);
-        console.log(projectCards);
 
         allProjectsDataJson.edges.forEach(projectData => {
             let project = projectData.node;
-            var vals = Object.keys(project).map(function(key) {
+            let vals = Object.keys(project).map(function(key) {
                 return project[key];
             });
-
-
 
             if (JSON.stringify(vals).toLowerCase().includes(searchTerm.toLowerCase())){
                 projectCards.push(

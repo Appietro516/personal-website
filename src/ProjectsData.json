@@ -1,5 +1,15 @@
 [
     {
+    "name": "Fantasy Football Analysis",
+    "description": "Predicting top fantasy football picks through linear regression on their past seasons,",
+    "projectUrl": null,
+    "srcUrl": "https://github.com/Appietro516/fantasy-football-data-analysis",
+    "image": "./images/projects/fantasy-stats.PNG",
+    "technologies": ["Python", "Numpy", "Pandas", "Data Analysis"],
+    "startDate": "Aug. 2020",
+    "endDate": "Ongoing"
+    },
+    {
     "name": "This Website",
     "description": "A personal website for displaying my portfolio, contact information, and work experiences.",
     "projectUrl": "https://apietrofeso.net",
@@ -11,7 +21,7 @@
     },
     {
     "name": "Stock Bounce Back Calculator",
-    "description": "Group project designed to allow a user to display and track stock portfolio data similar to apps like Robinhood.",
+    "description": "Group project designed to allow a user to display and track stock portfolio purchases, profit/loss, and shares outstanding",
     "projectUrl": null,
     "srcUrl": "https://github.com/aznaznorange/337FinalBounceBackCalculator",
     "image": "./images/projects/bounce-back.png",
