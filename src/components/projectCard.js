@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
 
     return (
     <>
-        <div key={project.name} className="project m-3 card border-dark">
+        <div key={project.name} className="project ml-3 mr-3 mt-3 mb-3 card border-0 shadow">
             <div className ="p-2 card-header text-center justify-content-center">
                 <h4 className = "mb-0">{project.name}</h4>
                 <div className = "small">{project.startDate} - {project.endDate}</div>
@@ -17,7 +17,9 @@ const ProjectCard = ({ project }) => {
                     {project.projectUrl &&
                         <a href={project.projectUrl}>Website</a>
                     }
-                    {project.projectUrl && project.srcUrl && " | "}
+                    {project.projectUrl && project.srcUrl &&
+                        " | "
+                    }
                     {project.srcUrl &&
                         <a href={project.srcUrl}>Source Code</a>
                     }
@@ -26,10 +28,10 @@ const ProjectCard = ({ project }) => {
                 </div>
             </div>
             <div className ="card-body ml-auto mr-auto p-0 text-center relative">
-                <div className ="ml-auto mr-auto" style={{"border": "1px solid", "border-width": "1px 0 1px 0", height:226, width:400}}>
+                <div className ="ml-auto mr-auto" style={{"border": "1px solid", "border-width": "1px 0 1px 0"}}>
                     <Img objectFit="contain" fluid={project.image.childImageSharp.fluid} />
                 </div>
-                <p className="m-auto p-3 text-left" style = {{"font-size":".9rem"}}>
+                <p className="m-auto p-2 text-left" style = {{"font-size":".9rem"}}>
                     {project.description}
                 </p>
             </div>
