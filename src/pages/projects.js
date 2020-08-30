@@ -57,7 +57,7 @@ const Projects = () => {
     return (
   <Layout pageInfo={{ pageName: "projects" }}>
     <SEO title="Projects" />
-    <div className={" border-0 mr-auto ml-auto justify-content-center m-3 pl-2 pr-2 rounded-pill searchbar d-flex shadow-sm"}>
+    <div className={" border-0 mr-auto ml-auto justify-content-center m-3 mt-4 pl-2 pr-2 rounded-pill searchbar d-flex shadow-sm"}>
         <FaSearch className={"align-self-center text-muted m-1"}/>
         <input className = {"border-0 m-1"}type="text" placeholder="Search" onChange = {(e) => setSearchTerm(e.target.value)}/>
     </div>

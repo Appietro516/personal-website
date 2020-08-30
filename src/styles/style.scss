@@ -19,3 +19,12 @@ html{
 .w-30{
     width: 30%;
 }
+
+.page{
+    width: fit-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}

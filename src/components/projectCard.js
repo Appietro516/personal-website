@@ -12,11 +12,11 @@ const ProjectCard = ({ project }) => {
 
     return (
     <>
-        <div key={project.name} className="project ml-3 mr-3 mt-3 mb-3 card border-0 shadow-sm">
+        <div key={project.name} className="project ml-3 mr-3 mt-3 mb-3 card border-0 shadow">
             <div className ="p-3 card-header text-center justify-content-center">
-                <h4 className = "mb-0">{project.name}</h4>
+                <h4 className ="mb-0">{project.name}</h4>
                 <div className = "small">{project.startDate} - {project.endDate}</div>
-                <div className = "small pt-1">
+                <div className = "small">
                     {project.projectUrl &&
                         <a href={project.projectUrl}>Website</a>
                     }
@@ -26,7 +26,7 @@ const ProjectCard = ({ project }) => {
                     {project.srcUrl &&
                         <a href={project.srcUrl}>Source Code</a>
                     }
-                    <div className="pt-2 ml-auto mr-auto">{technologies}</div>
+                    <div className="mt-1 ml-auto mr-auto">{technologies}</div>
                 </div>
             </div>
             <div className ="card-body ml-auto mr-auto p-0 text-center relative">
