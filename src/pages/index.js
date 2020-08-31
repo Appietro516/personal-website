@@ -10,7 +10,7 @@ import Hero from "../components/hero"
 const GetTypeWriter = (text) => (
     <Typewriter
         options={{
-            cursor: '',
+            cursor: ' ',
             delay: 60,
         }}
       onInit={(typewriter) => {
@@ -18,6 +18,7 @@ const GetTypeWriter = (text) => (
       }}
     />
 )
+
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "/" }}>
     <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`, `Anthony`, `Pietrofeso`, "web developer", "web", "software", "engineer"]} />
