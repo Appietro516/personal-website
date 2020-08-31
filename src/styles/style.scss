@@ -32,3 +32,24 @@ html{
 li{
     margin-bottom: 0;
 }
+
+.custom-bullets{
+    list-style-type: none;
+}
+.email-icon:before {
+  content: "📧";
+  text-align:center;
+  padding-right: 10px;
+}
+
+.phone-icon:before {
+  content: "📱";
+  padding-right: 10px;
+  padding-left: 8px;
+}
+
+.discord-icon:before {
+  content: "💬";
+  text-align:center;
+  padding-right: 10px;
+}
