@@ -38,18 +38,28 @@ li{
 }
 .email-icon:before {
   content: "📧";
-  text-align:center;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 .phone-icon:before {
   content: "📱";
-  padding-right: 10px;
-  padding-left: 8px;
+  padding-right: 5px;
 }
 
 .discord-icon:before {
   content: "💬";
-  text-align:center;
-  padding-right: 10px;
+  padding-right: 5px;
+}
+
+.badge{
+    vertical-align: middle;
+    line-height: 1.1;
+}
+.badge:hover{
+    filter: brightness(130%);
+}
+
+.badge > a {
+    text-decoration: none;
+    font-size:10px;
 }
