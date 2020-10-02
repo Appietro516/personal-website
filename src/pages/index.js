@@ -11,9 +11,9 @@ export default () => {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>{title || 'Gatsby Simplefolio'}</title>
+        <title>{title || 'Anthony Pietrofeso\'s Portfolio'}</title>
         <html lang={lang || 'en'} />
+        <meta charSet="utf-8" />
         <meta name="description" content={description || 'Gatsby Simplefolio'} />
       </Helmet>
       <App />

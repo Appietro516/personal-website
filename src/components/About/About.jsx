@@ -7,7 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, resume, transcript } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,14 +27,14 @@ const About = () => {
       <Container>
         <Title title="About Me" />
         <Row className="about-wrapper">
-          <Col md={6} sm={12}>
+          {/* <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
               </div>
             </Fade>
-          </Col>
-          <Col md={6} sm={12}>
+          </Col> */}
+          <Col md={8} sm={12} className="m-auto">
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
@@ -48,22 +48,46 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )}
               </div>
             </Fade>
           </Col>
         </Row>
+        <Fade top={true} duration={1000} delay={1200} distance="30px">
+            <span className="d-flex w-100 text-center mt-5">
+              <span className="d-flex m-auto">
+                {resume && (
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn cta-btn--resume mr-3"
+                      href={resume}
+                    >
+                      Resume
+                    </a>
+                )}
+                {transcript && (
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn cta-btn--resume mr-3"
+                      href={transcript}
+                    >
+                      Transcript
+                    </a>
+                )}
+                {/* {transcript && (
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn cta-btn--resume"
+                      href={transcript}
+                    >
+                      Transcript
+                    </a>
+                )} */}
+              </span>
+            </span>
+          </Fade>
       </Container>
     </section>
   );

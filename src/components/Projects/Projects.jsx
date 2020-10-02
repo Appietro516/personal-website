@@ -1,16 +1,18 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Badge } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import ColorHash from 'color-hash';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -28,7 +30,12 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, id, technologies, startDate, endDate} = project;
+            const colorHash = new ColorHash({saturation: .5, lightness: .425});
+            const technologyBadges = technologies && technologies.map(tech=>{
+              return <Badge key={tech} className ="mr-2 mb-2 p-2" style = {{"background-color": colorHash.hex(tech + new Date().getTime())}}> <a className="text-white" href={ `https://www.google.com/search?q=${tech}`}>{tech}</a></Badge>
+            });
+          
 
             return (
               <Row key={id}>
@@ -41,7 +48,9 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                      <h3 className="project-wrapper__text-title mb-0">{title || 'Project Title'}</h3>
+                      <h4 className="mb-4">{startDate} - {endDate}</h4>
+                      <div className="mb-3"> {technologyBadges} </div>
                       <div>
                         <p>
                           {info ||
@@ -49,20 +58,22 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
-                      >
-                        See Live
-                      </a>
+                      {url && ( 
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn cta-btn--hero mr-4"
+                          href={url || '#!'}
+                        >
+                          See Live
+                        </a>
+                      )}
 
                       {repo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
+                          className="cta-btn text-color-main pl-0"
                           href={repo}
                         >
                           Source Code
