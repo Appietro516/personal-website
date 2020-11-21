@@ -12,7 +12,7 @@ export const heroData = {
   title: 'Hi, I\'m',
   name: 'Anthony Pietrofeso',
   subtitle: 'Software Engineer',
-  cta: 'Learn More',
+  cta: 'About Me',
 };
 
 // ABOUT DATA
@@ -30,13 +30,25 @@ export const projectsData = [
     id: nanoid(),
     img: 'fantasy-stats.PNG',
     title: 'Fantasy Football Analysis',
-    info: 'Predicting top fantasy football picks through linear regression on their past seasons.',
+    info: 'Predicting top fantasy football picks through simple linear regression on their past seasons.',
     info2: '',
     url: '',
     repo: 'https://github.com/Appietro516/fantasy-football-data-analysis', // if no repo, the button will not show up
     technologies: ["Python", "Numpy", "Pandas", "Data Analysis"],
     startDate: "Aug 2020",
     endDate: "Oct 2020",
+  },
+  {
+    id: nanoid(),
+    img: 'azff.jpg',
+    title: 'L&M AZFF Portal Redesign',
+    info: 'Worked with a local consulting firm to help redisign their web portal. The portal ingest text-based reports and processes them in real time to create data visualizations and display them. The source code and live site are not available for the public, but a demo showcase wix site with sample data can be previewed.',
+    info2: '',
+    url: 'https://jgriffith32.wixsite.com/lc-m498',
+    repo: '', // if no repo, the button will not show up
+    technologies: ["Javascript", "Python", "Flask", "Bootstrap", "Bokeh", "Data Analysis"],
+    startDate: "Jan 2020",
+    endDate: "May 2020"
   },
   {
     id: nanoid(),
