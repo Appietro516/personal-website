@@ -17,7 +17,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  paragraphOne: 'Welcome to my personal website. I really enjoy all kinds of coding and data analysis work! Feel free to browse my latest projects, check out my resume, or contact me if you have any questions, comments, feedback, or business inquiries.',
+  paragraphOne: 'Welcome to my personal website, I really enjoy all kinds of coding and data analysis work. Feel free to browse my latest projects, check out my resume, or contact me if you have any questions, comments, feedback.',
   paragraphTwo: ' ',
   paragraphThree: 'I look forward to hearing from you!',
   resume: 'https://drive.google.com/file/d/1mU8UP-n07u4xBK9B1m1il1XdpsiVjmUJ/view?usp=sharing', 
@@ -42,7 +42,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'azff.jpg',
     title: 'L&M AZFF Portal Redesign',
-    info: 'Worked with a local consulting firm to help redisign their web portal. The portal ingest text-based reports and processes them in real time to create data visualizations and display them. The source code and live site are not available for the public, but a demo showcase wix site with sample data can be previewed.',
+    info: 'Senior capstone project with the University of Arizona and local consulting firm to help redesign their web portal. The portal ingests text-based reports and processes them in real time to create data visualizations and display them. The source code and live site are not available for the public, but a demo showcase wix site with sample data can be previewed.',
     info2: '',
     url: 'https://jgriffith32.wixsite.com/lc-m498',
     repo: '', // if no repo, the button will not show up
@@ -72,6 +72,18 @@ export const projectsData = [
     repo: 'https://github.com/aznaznorange/337FinalBounceBackCalculator', // if no repo, the button will not show up
     technologies: ["JavaScript", "HTML", "Node", "Express", "Alpha Vantage API"],
     startDate: "Nov 2018",
+    endDate: "Dec 2018"
+  },
+  {
+    id: nanoid(),
+    img: 'tower-rush.png',
+    title: 'Tower Rush Alpha',
+    info: 'Simple Tower Defense game created with C# and Unity with random path generation, procedurally increasing difficulty and wave strength, and multiple distinct classes of towers and enemies.',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/Appietro516/3D-Tower-Defense-Unity', // if no repo, the button will not show up
+    technologies: ["C#", "HLSL", "Unity", "Procedural Generation"],
+    startDate: "Oct 2018",
     endDate: "Dec 2018"
   },
 ];
