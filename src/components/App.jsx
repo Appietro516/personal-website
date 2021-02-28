@@ -4,13 +4,12 @@ import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-import SEO from "../components/seo"
-
+import SEO from './seo';
+import NetworkButtons from './NetworkButtons/NetworkButtons';
 
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
-
 
 function App() {
   const [hero, setHero] = useState({});
@@ -29,7 +28,23 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
-      <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`, `Anthony`, `Pietrofeso`, "web developer", "web", "software", "engineer", "python", "javascript"]} />
+      <SEO
+        title="Home"
+        keywords={[
+          `gatsby`,
+          `react`,
+          `bootstrap`,
+          `Anthony`,
+          `Pietrofeso`,
+          'web developer',
+          'web',
+          'software',
+          'engineer',
+          'python',
+          'javascript',
+        ]}
+      />
+      <NetworkButtons />
       <Hero />
       <About />
       <Projects />

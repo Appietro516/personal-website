@@ -24,19 +24,24 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={100} distance="30px">
           <h1 className="hero-title">
-            {title || 'Hi, I\'m'}{' '}
+            {title || "Hi, I'm"}{' '}
             <span className="text-color-main">{name || 'Anthony Pietrofeso'}</span>
             <br />
             {subtitle || 'Software Engineer'}
           </h1>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={200} distance="30px">
           <p className="hero-cta">
-            <span className="cta-btn cta-btn--hero">
-              <Link to="about" smooth duration={1000}>
+            <span className="cta-btn cta-btn--hero mr-3">
+              <Link to="about" smooth duration={200}>
                 {cta || 'Learn more'}
+              </Link>
+            </span>
+            <span className="cta-btn cta-btn--hero">
+              <Link to="contact" smooth duration={200}>
+                Contact
               </Link>
             </span>
           </p>

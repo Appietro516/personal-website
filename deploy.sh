@@ -6,6 +6,7 @@ git add -A
 git commit --amend --no-edit
 git push origin master -f
 #Reset the deploy branch to the remote master branch
+git fetch origin deploy
 git checkout deploy
 git fetch origin
 git gc
@@ -16,6 +17,6 @@ rm -r public
 gatsby build
 #Push built website to deploy
 git add -A
-git commit -m "build and deploy"
+git commit -m "build and deploy" --no-verify
 git push origin deploy -f
 git checkout master
