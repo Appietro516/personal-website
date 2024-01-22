@@ -2,14 +2,14 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Anthony Pietrofeso\'s Website', // e.g: 'Name | Developer'
+  title: "Anthony Pietrofeso's Website", // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description: 'A collection of works by Anthony Pietrofeso', // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
-  title: 'Hi, I\'m',
+  title: "Hi, I'm",
   name: 'Anthony Pietrofeso',
   subtitle: 'Software Engineer',
   cta: 'About Me',
@@ -17,11 +17,12 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  paragraphOne: 'Welcome to my personal website, I really enjoy all kinds of coding and data analysis work. Feel free to browse my latest projects, check out my resume, or contact me if you have any questions, comments, feedback.',
+  paragraphOne:
+    'Welcome to my personal website, I really enjoy all kinds of coding and data analysis work. Feel free to browse my latest projects, check out my resume, or contact me if you have any questions, comments, feedback.',
   paragraphTwo: ' ',
   paragraphThree: 'I look forward to hearing from you!',
-  resume: 'https://drive.google.com/file/d/1mU8UP-n07u4xBK9B1m1il1XdpsiVjmUJ/view?usp=sharing', 
-  transcript: 'https://drive.google.com/file/d/103jPjF-yQOd77WbyPcpXv9bQRdqcNyzG/view?usp=sharing'
+  resume: 'https://drive.google.com/file/d/1mU8UP-n07u4xBK9B1m1il1XdpsiVjmUJ/view?usp=sharing',
+  transcript: 'https://drive.google.com/file/d/103jPjF-yQOd77WbyPcpXv9bQRdqcNyzG/view?usp=sharing',
 };
 
 // PROJECTS DATA
@@ -34,9 +35,9 @@ export const projectsData = [
     info2: '',
     url: '',
     repo: 'https://github.com/Appietro516/fantasy-football-data-analysis', // if no repo, the button will not show up
-    technologies: ["Python", "Numpy", "Pandas", "Data Analysis"],
-    startDate: "Aug 2020",
-    endDate: "Oct 2020",
+    technologies: ['Python', 'Numpy', 'Pandas', 'Data Analysis'],
+    startDate: 'Aug 2020',
+    endDate: 'Oct 2020',
   },
   {
     id: nanoid(),
@@ -46,9 +47,9 @@ export const projectsData = [
     info2: '',
     url: 'https://jgriffith32.wixsite.com/lc-m498',
     repo: '', // if no repo, the button will not show up
-    technologies: ["Javascript", "Python", "Flask", "Bootstrap", "Bokeh", "Data Analysis"],
-    startDate: "Jan 2020",
-    endDate: "May 2020"
+    technologies: ['Javascript', 'Python', 'Flask', 'Bootstrap', 'Bokeh', 'Data Analysis'],
+    startDate: 'Jan 2020',
+    endDate: 'May 2020',
   },
   {
     id: nanoid(),
@@ -56,11 +57,11 @@ export const projectsData = [
     title: 'This Website',
     info: 'A personal website for displaying my portfolio, contact information, and work experiences.',
     info2: '',
-    url: 'https://apietrofeso.net',
+    url: 'https://pietrofeso.dev',
     repo: 'https://github.com/Appietro516/personal-website', // if no repo, the button will not show up
-    technologies: ["JavaScript", "HTML", "Gatsby", "React", "Bootstrap", "GraphQL"],
-    startDate: "Apr 2020",
-    endDate: "Ongoing"
+    technologies: ['JavaScript', 'HTML', 'Gatsby', 'React', 'Bootstrap', 'GraphQL'],
+    startDate: 'Apr 2020',
+    endDate: 'Ongoing',
   },
   {
     id: nanoid(),
@@ -70,9 +71,9 @@ export const projectsData = [
     info2: '',
     url: '',
     repo: 'https://github.com/aznaznorange/337FinalBounceBackCalculator', // if no repo, the button will not show up
-    technologies: ["JavaScript", "HTML", "Node", "Express", "Alpha Vantage API"],
-    startDate: "Nov 2018",
-    endDate: "Dec 2018"
+    technologies: ['JavaScript', 'HTML', 'Node', 'Express', 'Alpha Vantage API'],
+    startDate: 'Nov 2018',
+    endDate: 'Dec 2018',
   },
   {
     id: nanoid(),
@@ -82,9 +83,9 @@ export const projectsData = [
     info2: '',
     url: '',
     repo: 'https://github.com/Appietro516/3D-Tower-Defense-Unity', // if no repo, the button will not show up
-    technologies: ["C#", "HLSL", "Unity", "Procedural Generation"],
-    startDate: "Oct 2018",
-    endDate: "Dec 2018"
+    technologies: ['C#', 'HLSL', 'Unity', 'Procedural Generation'],
+    startDate: 'Oct 2018',
+    endDate: 'Dec 2018',
   },
 ];
 
@@ -92,8 +93,8 @@ export const projectsData = [
 export const contactData = {
   cta: '',
   btn: '',
-  email: 'appietro516@email.arizona.edu',
-  phone: "(520) 329-7251",
+  email: 'anthony@pietrofeso.dev',
+  phone: '(520) 261-3491',
 };
 
 // FOOTER DATA
@@ -118,6 +119,11 @@ export const footerData = {
       id: nanoid(),
       name: 'trello',
       url: 'https://trello.com/appietro516',
+    },
+    {
+      id: nanoid(),
+      name: 'hashnode',
+      url: 'https://blog.pietrofeso.dev/',
     },
   ],
 };
