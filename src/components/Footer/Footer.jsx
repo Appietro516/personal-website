@@ -31,15 +31,13 @@ const Footer = () => {
                   target="_blank"
                   aria-label={name}
                 >
-                  <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
+                  <i className={`fa-brands fa-${name || 'refresh'} fa-inverse`} />
                 </a>
               );
             })}
         </div>
         <hr />
-        <p className="footer__text text-white">
-          © {new Date().getFullYear()} - Anthony Pietrofeso
-        </p>
+        <p className="footer__text text-white">© {new Date().getFullYear()} - Anthony Pietrofeso</p>
 
         {isEnabled && <GithubButtons />}
       </Container>
