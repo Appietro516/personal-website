@@ -35,7 +35,7 @@ const NetworkButtons = () => {
                   color="black"
                   aria-label={name}
                 >
-                  <i className={`fa fa-${name || 'refresh'}`} />
+                  <i className={`fa-brands fa-${name || 'refresh'}`} />
                 </a>
               );
             })}
